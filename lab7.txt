@@ -1,0 +1,298 @@
+
+Nour@Nour-PC MINGW64 ~/OneDrive/Desktop
+$ mkdir labs-programming
+
+Nour@Nour-PC MINGW64 ~/OneDrive/Desktop
+$ cd labd-programming
+bash: cd: labd-programming: No such file or directory
+
+Nour@Nour-PC MINGW64 ~/OneDrive/Desktop
+$ cd labs-programming
+
+Nour@Nour-PC MINGW64 ~/OneDrive/Desktop/labs-programming
+$ mkdir lab1 lab2 lab3 lab4 lab5 lab6
+
+Nour@Nour-PC MINGW64 ~/OneDrive/Desktop/labs-programming
+$ git init
+Initialized empty Git repository in C:/Users/hassan/OneDrive/Desktop/labs-programming/.git/
+
+Nour@Nour-PC MINGW64 ~/OneDrive/Desktop/labs-programming (main)
+$ vim README.md
+
+Nour@Nour-PC MINGW64 ~/OneDrive/Desktop/labs-programming (main)
+$ touch .gitignore
+
+Nour@Nour-PC MINGW64 ~/OneDrive/Desktop/labs-programming (main)
+$ vim .gitignore
+
+Nour@Nour-PC MINGW64 ~/OneDrive/Desktop/labs-programming (main)
+$ git add README.md .gitignore
+warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+
+Nour@Nour-PC MINGW64 ~/OneDrive/Desktop/labs-programming (main)
+$ git commit -m "add README.md file and gitigonre"
+[main (root-commit) 4a50a72] add README.md file and gitigonre
+ 2 files changed, 7 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 README.md
+
+Nour@Nour-PC MINGW64 ~/OneDrive/Desktop/labs-programming (main)
+$ git checkout -b part1-3
+Switched to a new branch 'part1-3'
+
+Nour@Nour-PC MINGW64 ~/OneDrive/Desktop/labs-programming (part1-3)
+$ git add lab2/
+
+Nour@Nour-PC MINGW64 ~/OneDrive/Desktop/labs-programming (part1-3)
+$ git commit -m "Add Lab2"
+[part1-3 a68f719] Add Lab2
+ 1 file changed, 1 insertion(+)
+ create mode 100644 "lab2/\320\224\320\227-2.ipynb"
+
+Nour@Nour-PC MINGW64 ~/OneDrive/Desktop/labs-programming (part1-3)
+$ git add lab3/
+
+Nour@Nour-PC MINGW64 ~/OneDrive/Desktop/labs-programming (part1-3)
+$ git commit -m "Add Lab3"
+[part1-3 6764944] Add Lab3
+ 1 file changed, 1 insertion(+)
+ create mode 100644 "lab3/\320\224\320\227-3.ipynb"
+
+Nour@Nour-PC MINGW64 ~/OneDrive/Desktop/labs-programming (part1-3)
+$ git remote add origin https://github.com/NnourREldeen/labs-programming
+
+Nour@Nour-PC MINGW64 ~/OneDrive/Desktop/labs-programming (part1-3)
+$ git push -u origin part1-3
+Enumerating objects: 12, done.
+Counting objects: 100% (12/12), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (12/12), 63.24 KiB | 10.54 MiB/s, done.
+Total 12 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/NnourREldeen/labs-programming
+ * [new branch]      part1-3 -> part1-3
+branch 'part1-3' set up to track 'origin/part1-3'.
+
+Nour@Nour-PC MINGW64 ~/OneDrive/Desktop/labs-programming (part1-3)
+$ git branch
+  main
+* part1-3
+
+Nour@Nour-PC MINGW64 ~/OneDrive/Desktop/labs-programming (part1-3)
+$ git checkout main
+Switched to branch 'main'
+
+Nour@Nour-PC MINGW64 ~/OneDrive/Desktop/labs-programming (main)
+$ git remote add main https://github.com/NnourREldeen/labs-programming
+
+Nour@Nour-PC MINGW64 ~/OneDrive/Desktop/labs-programming (main)
+$ git push
+fatal: The current branch main has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin main
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+Nour@Nour-PC MINGW64 ~/OneDrive/Desktop/labs-programming (main)
+$ vim README.md
+
+Nour@Nour-PC MINGW64 ~/OneDrive/Desktop/labs-programming (main)
+$ git add README.md
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+
+Nour@Nour-PC MINGW64 ~/OneDrive/Desktop/labs-programming (main)
+$ git add main README.md
+fatal: pathspec 'main' did not match any files
+
+Nour@Nour-PC MINGW64 ~/OneDrive/Desktop/labs-programming (main)
+$ git branch
+* main
+  part1-3
+
+Nour@Nour-PC MINGW64 ~/OneDrive/Desktop/labs-programming (main)
+$ git checkout part1-23
+error: pathspec 'part1-23' did not match any file(s) known to git
+
+Nour@Nour-PC MINGW64 ~/OneDrive/Desktop/labs-programming (main)
+$ git checkout part1-3
+M       README.md
+Switched to branch 'part1-3'
+Your branch is up to date with 'origin/part1-3'.
+
+Nour@Nour-PC MINGW64 ~/OneDrive/Desktop/labs-programming (part1-3)
+$ git checkout -b main
+fatal: a branch named 'main' already exists
+
+Nour@Nour-PC MINGW64 ~/OneDrive/Desktop/labs-programming (part1-3)
+$ git branch
+  main
+* part1-3
+
+Nour@Nour-PC MINGW64 ~/OneDrive/Desktop/labs-programming (part1-3)
+$ git checkout main
+M       README.md
+Switched to branch 'main'
+
+Nour@Nour-PC MINGW64 ~/OneDrive/Desktop/labs-programming (main)
+$ vim text.txt
+
+Nour@Nour-PC MINGW64 ~/OneDrive/Desktop/labs-programming (main)
+$ git add text.txt
+warning: in the working copy of 'text.txt', LF will be replaced by CRLF the next time Git touches it
+
+Nour@Nour-PC MINGW64 ~/OneDrive/Desktop/labs-programming (main)
+$ git push
+fatal: The current branch main has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin main
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+Nour@Nour-PC MINGW64 ~/OneDrive/Desktop/labs-programming (main)
+$ git add text.txt
+
+Nour@Nour-PC MINGW64 ~/OneDrive/Desktop/labs-programming (main)
+$ git commit -m "add"
+[main cd2f43d] add
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+ create mode 100644 text.txt
+
+Nour@Nour-PC MINGW64 ~/OneDrive/Desktop/labs-programming (main)
+$ git push
+fatal: The current branch main has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin main
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+Nour@Nour-PC MINGW64 ~/OneDrive/Desktop/labs-programming (main)
+$  git push --set-upstream origin main
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 341 bytes | 341.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'main' on GitHub by visiting:
+remote:      https://github.com/NnourREldeen/labs-programming/pull/new/main
+remote:
+To https://github.com/NnourREldeen/labs-programming
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+Nour@Nour-PC MINGW64 ~/OneDrive/Desktop/labs-programming (main)
+$ git  checkout main
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+
+Nour@Nour-PC MINGW64 ~/OneDrive/Desktop/labs-programming (main)
+$ git tag v1.0
+
+Nour@Nour-PC MINGW64 ~/OneDrive/Desktop/labs-programming (main)
+$ git push origin v1.0\
+> ^C
+
+Nour@Nour-PC MINGW64 ~/OneDrive/Desktop/labs-programming (main)
+$ git push origin v1.0
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 341 bytes | 341.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/NnourREldeen/labs-programming
+ * [new tag]         v1.0 -> v1.0
+
+Nour@Nour-PC MINGW64 ~/OneDrive/Desktop/labs-programming (main)
+$ git checkout -b part4-6
+Switched to a new branch 'part4-6'
+
+Nour@Nour-PC MINGW64 ~/OneDrive/Desktop/labs-programming (part4-6)
+$ git add lab4
+
+Nour@Nour-PC MINGW64 ~/OneDrive/Desktop/labs-programming (part4-6)
+$ git commit -m "Add lab4"
+[part4-6 d11b755] Add lab4
+ 1 file changed, 1 insertion(+)
+ create mode 100644 "lab4/\320\224\320\227-4.ipynb"
+
+Nour@Nour-PC MINGW64 ~/OneDrive/Desktop/labs-programming (part4-6)
+$ git add lab5
+
+Nour@Nour-PC MINGW64 ~/OneDrive/Desktop/labs-programming (part4-6)
+$ git commit -m "Add lab5"
+[part4-6 f823cea] Add lab5
+ 1 file changed, 1 insertion(+)
+ create mode 100644 "lab5/\320\224\320\227-5.ipynb"
+
+Nour@Nour-PC MINGW64 ~/OneDrive/Desktop/labs-programming (part4-6)
+$ git add lab6
+
+Nour@Nour-PC MINGW64 ~/OneDrive/Desktop/labs-programming (part4-6)
+$ git commit -m "Add lab6"
+[part4-6 0331ee1] Add lab6
+ 1 file changed, 1 insertion(+)
+ create mode 100644 "lab6/\320\224\320\227-6.ipynb"
+
+Nour@Nour-PC MINGW64 ~/OneDrive/Desktop/labs-programming (part4-6)
+$ cd lab5 ; vim test.txt
+
+Nour@Nour-PC MINGW64 ~/OneDrive/Desktop/labs-programming/lab5 (part4-6)
+$ cd ..
+
+Nour@Nour-PC MINGW64 ~/OneDrive/Desktop/labs-programming (part4-6)
+$ git add lab5/
+warning: in the working copy of 'lab5/test.txt', LF will be replaced by CRLF the next time Git touches it
+
+Nour@Nour-PC MINGW64 ~/OneDrive/Desktop/labs-programming (part4-6)
+$ git commit -m "Add test.txt file"
+[part4-6 1ff0bd9] Add test.txt file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 lab5/test.txt
+
+Nour@Nour-PC MINGW64 ~/OneDrive/Desktop/labs-programming (part4-6)
+$ git push -u origin part4-6
+Enumerating objects: 17, done.
+Counting objects: 100% (17/17), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (16/16), 176.49 KiB | 12.61 MiB/s, done.
+Total 16 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), done.
+remote:
+remote: Create a pull request for 'part4-6' on GitHub by visiting:
+remote:      https://github.com/NnourREldeen/labs-programming/pull/new/part4-6
+remote:
+To https://github.com/NnourREldeen/labs-programming
+ * [new branch]      part4-6 -> part4-6
+branch 'part4-6' set up to track 'origin/part4-6'.
+
+Nour@Nour-PC MINGW64 ~/OneDrive/Desktop/labs-programming (part4-6)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Nour@Nour-PC MINGW64 ~/OneDrive/Desktop/labs-programming (main)
+$ git tag v2.0
+
+Nour@Nour-PC MINGW64 ~/OneDrive/Desktop/labs-programming (main)
+$ git push origin v2.0
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/NnourREldeen/labs-programming
+ * [new tag]         v2.0 -> v2.0
+
+Nour@Nour-PC MINGW64 ~/OneDrive/Desktop/labs-programming (main)
+$
+
